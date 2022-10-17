@@ -1,0 +1,74 @@
+.container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+  }
+  
+  .search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin:auto;
+    
+  }
+  
+  .img-box {
+    height: 100px;
+    display: grid;
+    vertical-align: middle;
+    position: relative;
+    background: #fff;
+    margin-top: 8px;
+}
+ 
+.rounded{
+  transition:transform .2s;
+}
+.rounded:hover
+{
+  transform: scale(1.1);
+}
+/* input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  font-size: 16px;
+  background-size: 44px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  background-image: url('http://localhost:4200/assets/logo/searchicon3.png');
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition:width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+} */
+/* input[type=text]:focus {
+  width: 365px;
+} */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control {
+  box-shadow: 0 10px 40px 0 #B0C1D9;
+}
+.form-control::placeholder  {
+  
+  font-family: FontAwesome;
+}
+
+input[type="text"]{
+  text-align: center;
+}

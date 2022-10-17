@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="container" >
+  <div class="row">
+    <!-- <div class="search-hero">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText"
+        placeholder="Start searching for a photo by name">
+    </div> -->
+
+    <div class="search-hero">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for sports by name">
+    </div>
+
+  </div>
+
+
+  <div class="col-md-12">
+
+    <div class="row">
+      <div class="col-md-3 pt-3 text-center" *ngFor="let path of paths | filter:searchText">
+
+        <img src="{{path.path}}" class="rounded" alt="" style="width: 175px; height:175px;"> 
+        <!-- <p>{{path.name}}</p> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+ 
+  <span [class]="className">jii</span>
+  <span class={{className}}>kii</span>
+  <p [style.font-size.px]= "90">{{test}}</p>
+  <p [innerHtml]="test"></p>
+  <span bind-class = "className" >jiii</span>
+  <h2 (mouseover)="print($event)">hiiiii</h2>
+  {{name}}
+  <input type="text" (change)="print($event)" [class.spinner]="true">
+  <input type="text" on-change="print($event)">
+  <!-- <input type="text" [(ngModel)]="name"> -->
+  <input type="text" bindon-ngModel="name">
+  <input type="text" [ngClass]= "{'test':true , 'test1':true}" >
+
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="hii">
+  {{hii}}
+</div>
+
+<div>
+  <input type="text" [ngModel]="hii" (ngModelChange)="greet($event)">
+  {{hii}}
+</div>
+
+<div>
+  <input #nameef type="text" [(ngModel)]="user" >
+  <p>{{user}}</p>
+</div>
+<router-outlet></router-outlet>
+<app-arav></app-arav>
